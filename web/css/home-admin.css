@@ -1,0 +1,17 @@
+.tutorship-icon {
+    background-image: url("../resourses/tutorship-icon.png"); }
+
+.tutorship-notify{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #E74C3D;
+    margin-left: -30px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}

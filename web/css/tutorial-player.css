@@ -1,0 +1,247 @@
+@import url(../fonts/fonts.css);
+@import url(sideNav.css);
+@import url(fixed-header.css);
+@import url(logo.css);
+
+
+* {
+    margin: 0;
+    padding: 0; }
+
+ul {
+    list-style: none;}
+
+body {
+    height: auto;
+    overflow-x: hidden;
+    background-color: #192231; }
+
+#menu-toggle:checked ~ .content {
+    -webkit-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    transform: translateX(220px); }
+
+.content {
+    position: relative;
+    margin-top: 120px;
+    height: auto;
+    width: 90%;
+    left: -webkit-calc(50% - (90% / 2));
+    left: calc(50% - (90% / 2));
+    z-index: -1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+
+.player-wrapper {
+    width: 70%;
+    height: 500px;
+    float: left; }
+
+.player {
+    height: 100%;
+    width: 70%;
+    float: left;
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+.recommended-list {
+    height: auto;
+    margin-left: 10px;
+    width: -webkit-calc(30% - 10px);
+    width: calc(30% - 10px);
+    float: left; }
+
+.heading {
+    height: 50px;
+    width: 100%;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 10px;
+    color: whitesmoke;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.item {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px; }
+
+.thumbnail {
+    height: 100%;
+    width: 45%;
+    float: left;
+    margin-left: 5px;
+    background-image: url("../resourses/tutorial-thumbnails/thumbnail.png");
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+.desc {
+    height: 100%;
+    width: -webkit-calc(55% - 5px);
+    width: calc(55% - 5px);
+    padding: 5px 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    font-family: "Fira Sans" ,  sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    overflow: hidden; }
+
+.bottom-wrapper-left {
+    width: 100%;
+    height: auto;
+    float: left; }
+
+.video-title {
+    height: auto;
+    width: 100%;
+    font-family: "Fira Sans" , sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 10px 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.button-wrapper {
+    height: 50px;
+    width: 100%; }
+
+.views, .like, .unlike {
+    height: 100%;
+    width: auto;
+    font-family: "Fira Sans" , sans-serif;
+    font-size: 18px;
+    color: lightgray;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.like, .unlike {
+    float: right; }
+
+.uploader {
+    height: 70px;
+    width: 100%;
+    margin-top: 10px; }
+
+.profile-image {
+    height: 70px;
+    width: 70px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    //background-image: url("../resourses/pp.png");
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+.username {
+    height: 70px;
+    width: auto;
+    float: left;
+    font-family: "Fira Sans" , sans-serif;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+    color: whitesmoke; }
+
+.follow-button {
+    height: 40px;
+    width: 120px;
+    float: right;
+    margin-top: 15px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-family: "Fira Sans" , sans-serif;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 18px;
+    background: #0D47A1; }
+
+.comment-section {
+    width: auto;
+    height: auto;
+    font-family: "Fira Sans" , sans-serif;
+    color: whitesmoke;
+    margin-top: 30px; }
+
+.comments-title {
+    height: 30px;
+    width: 100%;
+    font-size: 20px; }
+
+.comments-list {
+    width: 100%;
+    height: auto;
+    margin-top: 10px; }
+
+.comment-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.comment-user-image {
+    height: 50px;
+    width: 50px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    background-image: url("../resourses/cp.jpg");
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+.comment-user-desc {
+    height: auto;
+    width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+    float: left; }
+
+.comment-username {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 18px; }
+
+.comment {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }

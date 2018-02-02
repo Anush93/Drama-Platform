@@ -1,0 +1,199 @@
+@import url(../fonts/fonts.css);
+@import url(sideNav.css);
+@import url(fixed-header.css);
+@import url(logo.css);
+
+
+* {
+    margin: 0;
+    padding: 0; }
+
+ul {
+    list-style: none; }
+
+body {
+    height: auto;
+    overflow-x: hidden;
+    background-color: #192231; }
+
+
+#menu-toggle:checked ~ .content {
+    -webkit-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    transform: translateX(220px); }
+
+#menu-toggle:checked ~ .categories {
+    -webkit-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    transform: translateX(220px); }
+
+#menu-toggle:checked ~ .category-button {
+    -webkit-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    transform: translateX(220px); }
+
+.categories {
+    position: absolute;
+    height: 400px;
+    width: 90%;
+    margin-top: 0px;
+    left: -webkit-calc(50% - (90% / 2));
+    left: calc(50% - (90% / 2));
+    z-index: -1;
+    color: whitesmoke;
+    border-top: 1px solid gray;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+
+.category-show {
+    -webkit-transform: translateY(400px);
+    -ms-transform: translateY(400px);
+    transform: translateY(400px); }
+
+.main-title {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Fira Sans" , sans-serif;
+    padding: 10px 15px; }
+
+.category-list-1, .category-list-2 {
+    height: auto;
+    width: auto;
+    float: left; }
+
+.category-list-2 {
+    margin-left: 80px; }
+
+.category-list {
+    list-style: none; }
+.category-list li {
+    padding: 10px 15px;
+    font-family: "Fira Sans" , sans-serif;
+    font-size: 18px;
+    margin-left: 30px; }
+.category-list li:hover {
+    cursor: pointer; }
+
+.content {
+    position: relative;
+    margin-top: 120px;
+    height: auto;
+    width: 90%;
+    left: -webkit-calc(50% - (90% / 2));
+    left: calc(50% - (90% / 2));
+    z-index: 0;
+    background: #192231;
+    border-top: 1px solid gray;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;}
+
+.category-button {
+    height: 40px;
+    width: 100px;
+    background: #27ae60;
+    position: absolute;
+    right: 70px;
+    top: 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;}
+
+.category-button:hover {
+    cursor: pointer; }
+
+.recommended-list, .recent-upload-list {
+    height: 200px;
+    width: 100%;
+    margin-top: 40px; }
+
+.list-title {
+    height: 40px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 5px 20px;
+    font-family: "Fira Sans" , sans-serif;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.recent-upload-list-items {
+    height: 160px;
+    width: 100%;}
+
+.unodered{
+    position: relative;
+    height: 160px;
+    width:100%;
+}
+.unodered-item {
+    position: relative;
+    height:100%;
+    width:220px;
+    margin-left: 10px;
+    float: left;
+
+    }
+
+.item {
+    height: 140px;
+    width: 220px;
+    margin-left: 10px;
+    background: pink;
+    //background-image: url("../resourses/tutorial-thumbnails/thumbnail.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    }
+
+a.item-link {
+    height: 140px;
+    width: 220px;
+
+}
+
+.arrow {
+    font-size: 60px;
+    margin-left: 10px;
+    color: whitesmoke; }
+
+.button-change {
+    background: #c10f1e;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out; }
+

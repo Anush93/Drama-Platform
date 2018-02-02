@@ -1,0 +1,112 @@
+.creative-feed {
+    position: relative;
+    top: 70px;
+    height: auto;
+    width: -webkit-calc(100vw - 400px);
+    width: calc(100vw - 400px);
+    margin: 0px 10px 10px 90px;
+    float: left;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #f0f4f7;
+    -webkit-box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.6);
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+
+.welcome-box {
+    position: relative;
+    height: 50px;
+    width: 476px;
+    margin: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .9em;
+    font-family: 'Fira Sans',sans-serif;
+    padding: 5px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #f0f4f7; }
+
+.border {
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+
+.box {
+    position: relative;
+    height: 348px;
+    width: 476px;
+    margin: 10px;
+    background: #e8f1ff; }
+
+.box-image {
+    height: 268px;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+.box-info {
+    height: 80px;
+    width: 100%; }
+
+.profile-image {
+    height: 100%;
+    width: 80px;
+    border: 5px solid #e8f1ff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    background: lightpink; }
+
+.box-desc {
+    height: 100%;
+    width: -webkit-calc(100% - 80px);
+    width: calc(100% - 80px);
+    float: left; }
+
+.profile-name {
+    height: 25px;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: blue;
+    font-family: "Patua One",sans-serif; }
+
+.post-desc {
+    height: 55px;
+    width: 100%;
+    font-size: 14px;
+    word-wrap: break-word;
+    padding: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Quicksand",sans-serif; }

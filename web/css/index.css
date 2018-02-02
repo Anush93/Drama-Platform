@@ -1,0 +1,484 @@
+@import url("../fonts/fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+//background-color: #243B55;
+    overflow: hidden;
+}
+
+.pageWrap , .pageContent{
+    height: 100vh ;
+    width: 100vw;
+    background-color: #001825;
+}
+
+.header{
+    height: 10vh;
+    width: 100vw;
+    position: relative;
+    background-color: #001421;
+}
+
+.logo{
+    height: 9vh;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:left;
+    color: White;
+    font-family: 'Berkshire Swash', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+
+.signIn{
+    height: 20px;
+    width: 70px;
+    position: relative;
+    background-color: #34495e ;
+    color: white;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif,serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    float: right;
+    transform: skewX(-20deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.skew{
+  transform: skewX(20deg);
+}
+
+.signIn:hover {
+    cursor: pointer;
+    background:#16a085;
+}
+
+.signIn{
+    margin-top: 11px;
+    margin-right: 35px;
+}
+
+.content{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: #001421;
+    background-repeat: round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.content-wall{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background: #001421;
+
+	background-size : cover;
+    z-index: 0;
+    transition: all 1.5s ease-in-out;
+
+}
+
+.content-left{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+  display: flex;
+  flex-direction:column;
+  //background-color: pink;
+}
+
+.strip{
+  height: 350px;
+  width: 100%;
+  position: relative;
+  top: 18vh;
+  background: #141E3F;
+}
+
+.quote{
+  font-size: 45px;
+  color: white;
+  width: 84%;
+  position: relative;
+  height: 170px;
+  top: 20px;
+  left: 16%;
+  word-wrap: break-word;
+  font-family: 'Patua One', serif;
+  //background: red;
+
+}
+
+.welcome-text{
+  font-size: 20px;
+  color: white;
+  position: relative;
+  height: 30px;
+  width: 84%;
+  top: 30px;
+  left: 16%;
+  font-family: 'quicksand', serif;
+  //background: blue;
+}
+
+.signUp{
+  background-color: yellow;
+  font-size: 100%;
+  color: black;
+  position: relative;
+  width: 100px;
+  height: 19px;
+  top:80px;
+  left: 16%;
+  text-align: center;
+  padding: 7px 3px;
+  font-family: 'Fira Sans', serif;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
+.signUp:hover{
+  cursor: pointer;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.content-right{
+  width: 40vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right:0;
+  background-image: url("../resourses/background7.png");
+  background-repeat: no-repeat;
+  //background-color:red;
+}
+
+.pageContent{
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    transition: transform 500ms ease-in-out;
+}
+
+
+.loginSection{
+    width: 410px;
+    height: 100vh;
+    background-color: #192231;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(410px);
+    transition: transform 500ms ease-in-out;
+}
+
+.toggleWrapper{
+  width: 410px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+.closeButton{
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: right;
+  transform: scale(1);
+  transition: all 0.8s ease-in-out;
+}
+
+.closeButton:hover{
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.loginWrapper{
+    height: auto;
+    width: 390px;
+    background: rgba(70, 118, 120 , 0.5);
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerWrapper{
+    height: 150px;
+    width: 380px;
+
+}
+
+.imageTag{
+    height: 100px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-image: url("../resourses/pic.png");
+    background-size: cover;
+    margin-top: 30px;
+    border: #90AEAC solid 1px;
+}
+.title{
+    width: 380px;
+    height: 40px;
+    font-family:  'Fira Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color: white;
+}
+
+.loginDetail{
+    width: 380px;
+    height: 300px;
+    //background-color: blue;
+}
+
+.username-wrap{
+  height: auto;
+  width: auto;
+  //background:red;
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.password-wrap{
+  height: auto;
+  width: auto;
+  //background:green;
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.username , .usernameInput{
+    width: 360px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    //border-radius: 5px;
+    background-color: #3A6D6E;
+}
+
+.username-notify{
+  position: absolute;
+  top: 50px;
+  height: 35px;
+  width:180px;
+  margin-left: -80px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: crimson;
+  z-index: 1
+
+}
+
+.username-notify::after{
+  top: -55%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 151, 167, 0);
+  border-bottom-color:crimson;
+  border-width: 10px;
+  margin-left: -70px;
+  z-index: 1
+}
+
+
+.password-notify{
+  position: absolute;
+  top: 50px;
+  height: 35px;
+  width:180px;
+  margin-left: -80px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  z-index: 1;
+  background: crimson;
+  transition: all .5s  ease-in-out;
+
+}
+
+
+.is-active{
+  display: flex;
+   -webkit-animation: note 800ms ease-in-out forwards;
+   -webkit-transform-origin: 35px 0px;
+}
+
+@-webkit-keyframes note {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
+            transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg) rotateX(-2deg);
+            transform: rotate(-10deg) rotateX(-2deg);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+.password-notify::after{
+  top: -55%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 151, 167, 0);
+  border-bottom-color:crimson;
+  border-width: 10px;
+  margin-left: -70px;
+  z-index: 1
+}
+
+.text-invalid{
+      position: absolute;
+      font-size: 18px;
+      color: white;
+      font-family: 'Fira Sans';
+      z-index: 2;
+      transition: all .3s ease-in-out;
+      pointer-events: none;
+}
+
+
+.passwordInput:focus , .usernameInput:focus{
+  outline-style:none;
+}
+
+.password , .passwordInput{
+    width: 360px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0px;
+    //border-radius: 5px;
+    background-color: #396F6F;
+}
+
+.passwordInput , .usernameInput{
+  top: 0px;
+  width: 350px;
+  left: 10px;
+  border: None;
+  font-size: 18px;
+  text-overflow: clip;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+}
+
+input::-webkit-input-placeholder{
+    color: #90AEAC;
+}
+
+.loginButton{
+    width: 360px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    color: #255B58;
+    font-family:'Fira Sans';
+    padding: 0.2em 0;
+    font-size: 18px;
+    font-weight: 100;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.15s ease-in-out;
+
+}
+
+.loginButton:hover{
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4);
+    transition: all 0.15s ease-in-out;
+}
+
+
+#loginSection.showLog{
+  transform: translateX(0vw);
+  transition: transform 500ms ease-in-out;
+}
+
+
+#closeButton.disappear{
+  transform: scale(0);
+}

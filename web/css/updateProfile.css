@@ -1,0 +1,160 @@
+.form-signin {
+    width: 400px;
+    padding: 15px;
+    margin:100px;
+    margin-top:20px;
+}
+.panel-default {
+    opacity: 0.8;
+    /*margin-top:30px;*/
+}
+.input-group-addon
+{
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+    color: rgb(255, 255, 255);
+}
+.form-control:focus
+{
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+    color: rgb(255, 255, 255);
+}
+.form-signup input[type="text"],.form-signup input[type="password"] { border: 1px solid rgb(50, 118, 177); }
+
+.input-group{
+    width: 100% !important;
+}
+
+.container{
+    margin-left: 0;
+}
+
+.panel{
+    width:400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#outer
+{
+    height:650px;
+    width: 1500px;
+    margin:0px auto;
+    border: 1px solid;
+    background-color: #284150;
+   /* background-image: url('../resourses/a.jpg'); */
+
+}
+#description
+{
+    width:50%;
+    height:100%;
+    float: left;
+    color: #f2f6f9;
+    font-family: "Fira Sans"
+
+}
+#regSide
+{
+    width: 50%;
+    height:100%;
+    float: left;
+}
+
+#form
+{
+    height: 528px;
+    width: 50%;
+    opacity: 0.8;
+    margin: 0 20;
+    margin-top: 80px;
+    border-radius: 5px;
+    background-color: rgb(50, 118, 177);
+   /* background-color: #848484; */
+
+}
+.a
+{
+    height: 40px;
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+
+
+}
+.b
+{
+    height: 40px;
+   /* width: 100px; */
+    border-radius: 10px;
+   /* margin-top: 20px;*/
+   /* margin-left: 20px; */
+    background-color: rgb(40, 94, 142);
+    cursor: pointer;
+    text-align:center;
+    float: right;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+    margin-top: auto;
+
+}
+.list
+{
+    height: 40px;
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align:center;
+
+
+
+}
+
+.val_error
+{
+    margin-left: 20px;
+    color: #FF1F1F;
+}
+
+.discSide
+{   position: absolute;
+    padding-bottom: 100px;
+    height: 97%;
+    width: 100%;
+    opacity: 0.8;
+    background-image: url('../resourses/background17.png');
+    background-repeat: no-repeat;
+}
+.c{
+    font-weight: bold;
+    font-size: 180%;
+    font-family: "Fira Sans";
+    color: whitesmoke;
+
+}

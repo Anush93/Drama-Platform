@@ -1,0 +1,28 @@
+@import url(../fonts/fonts.css);
+@import url(logo.css);
+@import url(sideNav.css);
+@import url(fixed-header.css);
+@import url(creative-feed.css);
+@import url(advanced-search.css);
+@import url(right-sidebar.css);
+@import url(upload-creation.css);
+
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: auto;
+  overflow-x: hidden;
+  background-color: #192231; }
+
+@media (max-width: 900px) {
+  .box, .welcome-box {
+    width: 95%; } }
+
+@media (max-width: 795px) {
+  .creative-feed {
+    width: 80%; }
+  .right-section {
+    display: none; } }

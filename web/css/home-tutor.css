@@ -1,0 +1,46 @@
+@import url(../fonts/fonts.css);
+@import url(logo.css);
+@import url(sideNav.css);
+@import url(fixed-header.css);
+@import url(creative-feed.css);
+@import url(advanced-search.css);
+@import url(right-sidebar.css);
+@import url(upload-creation.css);
+
+
+.search-box {
+    margin-left: 5px; }
+
+.wrap-left {
+    width: 40%; }
+
+.button-wrap {
+    width: 60%; }
+
+.search-box {
+    width: -webkit-calc((100vw - 180px) * 0.5);
+    width: calc((100vw - 180px) * 0.5); }
+
+.upload-tutorial-icon {
+    background-image: url("../resourses/upload-tutorial-icon.png"); }
+
+.submission-icon {
+    background-image: url("../resourses/submission-icon.png"); }
+
+.upload-trend-icon {
+    background-image: url("../resourses/trend-icon.png"); }
+
+.new-notify{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #E74C3D;
+    margin-left: -30px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
